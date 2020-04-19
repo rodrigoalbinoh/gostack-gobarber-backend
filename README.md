@@ -1,6 +1,7 @@
 # GoBarber
-[![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg?style=flat)](https://github.com/rodrigoalbinoh/gostack-gobarber-backend/commit/master)
-[![GitHub commit activity the past week, 4 weeks](https://img.shields.io/github/commit-activity/y/eslint/eslint.svg?style=flat)](https://github.com/rodrigoalbinoh/gostack-gobarber-backend/commits)
+![GitHub last commit](https://img.shields.io/github/last-commit/rodrigoalbinoh/gostack-gobarber-backend)
+
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/rodrigoalbinoh/gostack-gobarber-backend)
 
 ## Criando os containers no Docker
 Basta rodar os comandos abaixo no seu terminal
