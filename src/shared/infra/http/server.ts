@@ -1,12 +1,14 @@
+import 'reflect-metadata';
+
 import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import 'express-async-errors';
-import routes from './routes';
-import 'reflect-metadata';
-import uploadConfig from './config/upload';
-import AppError from './errors/AppError';
 
-import './database';
+import uploadConfig from '@config/upload';
+import AppError from '@shared/errors/AppError';
+import routes from '@shared/infra/http/routes';
+
+import '@shared/infra/typeorm';
 
 const app = express();
 
@@ -21,8 +23,6 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
       message: err.message,
     });
   }
-
-  console.error(err);
 
   return response.status(500).json({
     status: 'error',
