@@ -7,6 +7,7 @@
 Basta rodar os comandos abaixo no seu terminal
 
 docker run --name gostack_postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+docker run --name gostack_mongo -p 27017:27017 -d -t mongo 
 
 * Quando reiniciar a máquina ou o container parar, basta rodar: docker ps -a
 * Identificar o container parado e rodar: docker start {container_id ou name}
