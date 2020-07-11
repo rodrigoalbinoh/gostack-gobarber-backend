@@ -6,7 +6,6 @@ import { inject, injectable } from 'tsyringe';
 import IAppointmentsRepository from '@modules/appointments/repositories/IAppointmentsRepository';
 import Appointment from '@modules/appointments/infra/typeorm/entities/Appointment';
 import INotificationsRepository from '@modules/notifications/repositories/INotificationsRepository';
-import appointmentsRouter from '../infra/http/routes/appointments.routes';
 
 interface IRequest {
   provider_id: string;
